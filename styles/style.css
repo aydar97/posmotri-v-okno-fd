@@ -66,7 +66,7 @@ ol {
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
@@ -96,7 +96,7 @@ ol {
 .result__video-container {
     width: 711px;
     height: 386px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -134,6 +134,7 @@ ol {
 
 .content__video-card-description-container {
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .search-form__fieldset-title {
@@ -154,16 +155,18 @@ ol {
 
 .content__accent {
     color: #545050;
+    display: inline-block;
+    transform: translateY(3px);
 }
 
 .content__card-link {
     display: block;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }
 
 .content__video-card-title {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -172,6 +175,7 @@ ol {
     line-height: 100%;
     letter-spacing: 0;
     text-transform: uppercase;
+    margin-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -179,7 +183,7 @@ ol {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 16.2px;
@@ -214,16 +218,18 @@ ol {
 }
 
 .search-form__textfield {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
     border: none;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    color: #ffffff;
+    color: #fff;
     background-color: transparent;
     appearance: none;
+    min-height: 27px;
+    min-width: 225px;
 }
 
 .search-form__textfield::placeholder {
@@ -270,9 +276,8 @@ ol {
     border: 1px solid #fff;
     color: #fff;
     background-color: transparent;
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+    font-family: inherit;
+    font-size: inherit;
     line-height: 100%;
     letter-spacing: 0;
     height: 34px;
